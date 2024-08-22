@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #030303; /* Dark background color */
+            color: #f0f0f0;
+            overflow-x: hidden;
+        }
+        .kiran-font {
+            font-family: 'Roboto Slab', serif;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('images/4965.jpg') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 0 20px;
+        }
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.5em;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #222;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        nav .left-icons, nav .right-icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        nav a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        nav a:hover {
+            background-color: #555;
+            color: #f0f0f0;
+            border-radius: 5px;
+        }
+        nav a i {
+            margin-right: 8px;
+        }
+        section {
+            padding: 60px 20px;
+            scroll-behavior: smooth;
+        }
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        section h2 i {
+            margin-right: 15px;
+            font-size: 1.5em;
+        }
+        section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 0 auto;
+            border: 5px solid #f0f0f0; /* White border */
+        }
+        .projects, .skills, .experience, .contact {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .box {
+            background-color: #444;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+        .box h3 {
+            font-size: 1.5em;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+        .box h3 i {
+            margin-right: 10px;
+        }
+        .box p {
+            font-size: 1.1em;
+            margin-bottom: 0;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #ffffff; /* Green button color */
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: inline-flex;
+            align-items: center;
+        }
+        .btn i {
+            margin-right: 8px;
+        }
+        .btn:hover {
+            background-color: #ffffff; /* Darker green */
+        }
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #222;
+            color: #f0f0f0;
+        }
+        .footer-links a {
+            color: #ffffff; /* Green color for links */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/photo_2023-07-29_23-57-19.jpg" alt="Profile Picture" class="profile-pic">
+            <h1> <span class="kiran-font">Hi! I'm Kiran</span></h1>
+            <p>I'm a Software Engineer that welcomes challenges and architects solutions</p>
+        </div>
+    </header>
+    <nav>
+        <div class="left-icons">
+            <a href="#about"><i class="fas fa-user"></i>About Me</a>
+            <a href="#projects"><i class="fas fa-project-diagram"></i>Projects</a>
+            <a href="#skills"><i class="fas fa-cogs"></i>Skills</a>
+            <a href="#experience"><i class="fas fa-briefcase"></i>Experience</a>
+        </div>
+        <div class="right-icons">
+            <a href="mailto:your.email@example.com" class="btn"><i class="fas fa-envelope"></i>Email Me</a>
+            <a href="https://www.linkedin.com/in/kiran-ap-b3443527a?originalSubdomain=in" target="_blank" class="btn"><i class="fab fa-linkedin"></i>LinkedIn</a>
+        </div>
+    </nav>
+    <section id="about">
+        <div class="container">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <p>
+                Hello, I'm Kiran, a software engineer with a passion for building innovative solutions. I specialize in software development and have a keen interest in creating user-friendly interfaces and efficient backend systems.In addition to my technical skills, I am committed to continuous learning and staying updated with the latest industry trends. I thrive in collaborative environments and am eager to tackle new challenges that push the boundaries of technology.
+            </p>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+            <div class="projects">
+                <div class="box">
+                    <h3><i class="fas fa-cloud"></i> Data Deduplication for Cloud</h3>
+                    <p>Developed a data deduplication system designed to optimize cloud storage by identifying and eliminating redundant data. This project aimed to enhance storage efficiency and reduce costs associated with data redundancy in cloud environments..</p>
+                </div>
+                <div class="box">
+                    <h3><i class="fas fa-gavel"></i> Online Auction Website</h3>
+                    <p>Developed a comprehensive online auction platform allowing users to participate in auctions, place bids, and manage listings. This project aimed to create a user-friendly and secure online environment for buying and selling items through auction-based transactions..</p>
+                </div>
+                <div class="box">
+                    <h3><i class="fas fa-calculator"></i> Python GUI Calculator</h3>
+                    <p>Developed a graphical user interface (GUI) calculator application using Python, designed to perform basic arithmetic operations with a user-friendly interface. This project aimed to enhance user interaction with mathematical calculations through an intuitive and visually appealing application..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h2><i class="fas fa-cogs"></i> Skills</h2>
+            <div class="skills">
+                <div class="box">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <p>Python, C , JavaScript .</p>
+                </div>
+                <div class="box">
+                    <h3><i class="fas fa-laptop-code"></i> Web Technologies</h3>
+                    <p>React, HTML,CSS, Node.js</p>
+                </div>
+                <div class="box">
+                    <h3><i class="fas fa-tools"></i> Tools & Frameworks</h3>
+                    <p>Git, Docker,Django</p>
+                </div>
+                <div class="box">
+                  <h3><i class="a fa-gears"></i> Other skills</h3>
+                  <p>Photography , Adobe Lightroom ,Canva ,Figma</p>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <div class="container">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <div class="experience">
+                <div class="box">
+                    <h3><i class="fas fa-briefcase"></i> Trainee at Datapy</h3>
+                    <p>4 months of experience working on various projects.</p>
+                </div>
+                <div class="box">
+                    <h3><i class="fas fa-laptop-code"></i> Web Development Intern</h3>
+                    <p>One week of internship focused on web development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+            <p>You can reach me via email or LinkedIn:</p>
+            <div class="contact">
+                <div class="box">
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:kiranap7112001@gmail.com">kiranap7112001@gmail.com</a></p>
+                </div>
+                <div class="box">
+                    <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/kiran-ap-b3443527a?originalSubdomain=in" target="_blank">kiran-ap</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-links">
+            <a href="#about"><i class="fas fa-user"></i> About Me</a>
+            <a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
+            <a href="#skills"><i class="fas fa-cogs"></i> Skills</a>
+            <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact Me</a>
+        </div>
+        <p>&copy; 2024 Kiran's Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

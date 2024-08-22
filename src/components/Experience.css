@@ -1,0 +1,19 @@
+#experience {
+    padding: 2rem;
+  }
+  
+  #experience h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  #experience ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #experience ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  

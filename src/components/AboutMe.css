@@ -1,0 +1,24 @@
+#about {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  #about p {
+    max-width: 600px;
+    font-size: 1.1rem;
+  }
+  
